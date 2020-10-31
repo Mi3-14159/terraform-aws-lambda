@@ -26,7 +26,7 @@ validate: ## Validates the Terraform files
 	@AWS_REGION=eu-west-1 terraform validate
 
 .PHONY: test
-test: ## Runs all terraform tests
+test: ## Runs all terratests
 	@echo "+ $@"
 	@cd test && go test -v -timeout 30m
 
@@ -37,6 +37,7 @@ documentation: ## Generates README.md from static snippets and Terraform variabl
 
 .PHONY: tag
 tag: ## Create a new git tag to prepare to build a release
+	@echo "+ $@"
 	git tag -a $(VERSION) -m "$(VERSION)"
 	@echo "Run git push origin $(VERSION) to push your new tag to GitHub and trigger a build."
 
