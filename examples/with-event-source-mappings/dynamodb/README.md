@@ -33,5 +33,7 @@ No input.
 
 ## Outputs
 
-No output.
-
+| Name | Description |
+|------|-------------|
+| arn | The Amazon Resource Name (ARN) identifying your Lambda Function. |
+| function\_name | The unique name of your Lambda Function. |
