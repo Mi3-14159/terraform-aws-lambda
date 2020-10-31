@@ -1,4 +1,4 @@
-# Example with event source mapping
+# Example with DynamoDb event source mapping
 
 Creates an AWS Lambda function triggered by a DynamoDb [event source mapping](https://docs.aws.amazon.com/lambda/latest/dg/with-ddb.html).
 

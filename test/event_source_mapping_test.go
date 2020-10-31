@@ -12,6 +12,8 @@ import (
 
 const region = "eu-west-1"
 
+// TODO: add tests for IAM permissions
+
 func TestEventSourceMapping(t *testing.T) {
 	td := []struct {
 		name         string
@@ -20,6 +22,7 @@ func TestEventSourceMapping(t *testing.T) {
 	}{
 		{name: "sqs", dir: "../examples/with-event-source-mappings/sqs", expBatchSize: 5},
 		{name: "dynamodb", dir: "../examples/with-event-source-mappings/dynamodb", expBatchSize: 50},
+		{name: "kinesis", dir: "../examples/with-event-source-mappings/kinesis", expBatchSize: 50},
 	}
 
 	sess := session.Must(session.NewSessionWithOptions(session.Options{

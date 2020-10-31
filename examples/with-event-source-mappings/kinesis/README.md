@@ -1,6 +1,6 @@
-# Example with SQS event source mapping
+# Example with Kinesis event source mapping
 
-Creates an AWS Lambda function triggered by a SQS [event source mapping](https://docs.aws.amazon.com/lambda/latest/dg/with-sqs.html).
+Creates an AWS Lambda function triggered by a Kinesis [event source mapping](https://docs.aws.amazon.com/lambda/latest/dg/with-kinesis.html).
 
 ## Usage
 
